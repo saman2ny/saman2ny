@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-Myself called as Sam Antony.I'm MEAN stack developer and your watching amateur developer account.
+Myself called as Sam Antony. I'm MEAN stack developer and your watching amateur developer account.
 
 <!--
 **saman2ny/saman2ny** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
