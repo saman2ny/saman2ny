@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+.welcome {
+	width: 100%;
+	padding: 1.5rem 1.25rem 0;
+}
+
+.welcome__nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.welcome__signature {
+	font-family: "Poppins", sans-serif;
+	font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+	letter-spacing: 0.04em;
+	color: #1d140d;
+	line-height: 1;
+}
+
+.welcome__nav-links {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.welcome__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	border-radius: 999px;
+	color: #444;
+	text-decoration: none;
+	transition:
+		transform 0.2s ease,
+		color 0.2s ease,
+		background-color 0.2s ease;
+}
+
+.welcome__icon:hover {
+	color: #000;
+	background: rgba(17, 17, 17, 0.06);
+	transform: translateY(-2px);
+}
+
+.welcome__icon :global(svg) {
+	width: 1.15rem;
+	height: 1.15rem;
+}
+
+.welcome__hero {
+	display: grid;
+	grid-template-columns: minmax(0, 1.3fr) minmax(320px, 0.9fr);
+	gap: 1.5rem;
+	align-items: stretch;
+	max-width: 1100px;
+	margin: 2rem auto 0;
+}
+
+.welcome__copy,
+.welcome__panel {
+	padding: clamp(1.5rem, 3vw, 2rem);
+	border-radius: 2rem;
+	border: 1px solid rgba(17, 17, 17, 0.08);
+	background: rgba(255, 251, 244, 0.58);
+	box-shadow:
+		0 20px 60px rgba(63, 48, 33, 0.06),
+		inset 0 1px 0 rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(12px);
+}
+
+.welcome__copy {
+	background:
+		radial-gradient(circle at top left, rgba(190, 214, 202, 0.42), transparent 27%),
+		rgba(255, 251, 244, 0.58);
+}
+
+.welcome__eyebrow,
+.welcome__panel-label {
+	font-size: 0.76rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	color: #8c6a45;
+}
+
+.welcome__eyebrow {
+	margin-bottom: 1rem;
+}
+
+.welcome__title {
+	max-width: 11ch;
+	font-family: "Poppins", sans-serif;
+	font-size: clamp(3rem, 7vw, 5.6rem);
+	line-height: 0.95;
+	letter-spacing: -0.05em;
+	color: #1d140d;
+	margin-bottom: 1rem;
+}
+
+.welcome__lede {
+	max-width: 44rem;
+	font-size: 1.05rem;
+	line-height: 1.8;
+	color: #5e5144;
+}
+
+.welcome__meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.9rem 1.2rem;
+	margin-top: 1.6rem;
+}
+
+.welcome__meta-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.55rem;
+	color: #3d332c;
+	text-decoration: none;
+}
+
+.welcome__meta-item :global(svg),
+.welcome__button :global(svg) {
+	width: 1rem;
+	height: 1rem;
+	flex: 0 0 auto;
+}
+
+.welcome__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.9rem;
+	margin-top: 1.8rem;
+}
+
+.welcome__button {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.65rem;
+	padding: 0.95rem 1.2rem;
+	border-radius: 999px;
+	text-decoration: none;
+	font-weight: 700;
+	transition:
+		transform 0.2s ease,
+		background-color 0.2s ease,
+		color 0.2s ease,
+		border-color 0.2s ease;
+}
+
+.welcome__button:hover {
+	transform: translateY(-2px);
+}
+
+.welcome__button--primary {
+	background: #1d140d;
+	color: #fff8f0;
+}
+
+.welcome__button--primary:hover {
+	background: #342319;
+}
+
+.welcome__button--secondary {
+	border: 1px solid rgba(17, 17, 17, 0.08);
+	background: rgba(255, 255, 255, 0.74);
+	color: #2d241d;
+}
+
+.welcome__panel-grid {
+	display: grid;
+	gap: 0.85rem;
+	margin-top: 1rem;
+}
+
+.welcome__stat {
+	padding: 1rem 1rem 0.95rem;
+	border-radius: 1.25rem;
+	background: rgba(255, 255, 255, 0.72);
+	border: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+.welcome__stat h2 {
+	font-family: "Poppins", sans-serif;
+	font-size: clamp(1.5rem, 3vw, 2rem);
+	color: #1d140d;
+	margin-bottom: 0.35rem;
+}
+
+.welcome__stat p,
+.welcome__focus-list li {
+	line-height: 1.6;
+	color: #5e5144;
+}
+
+.welcome__focus {
+	margin-top: 1.35rem;
+}
+
+.welcome__focus-list {
+	list-style: none;
+	display: grid;
+	gap: 0.7rem;
+	margin-top: 1rem;
+}
+
+.welcome__focus-list li {
+	padding-left: 1.05rem;
+	position: relative;
+}
+
+.welcome__focus-list li::before {
+	content: "";
+	position: absolute;
+	top: 0.7rem;
+	left: 0;
+	width: 0.38rem;
+	height: 0.38rem;
+	border-radius: 999px;
+	background: #8c6a45;
+}
+
+@media (max-width: 640px) {
+	.welcome {
+		padding-inline: 1rem;
+	}
+
+	.welcome__nav {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.welcome__title {
+		max-width: none;
+	}
+}
+
+@media (max-width: 900px) {
+	.welcome__hero {
+		grid-template-columns: 1fr;
+	}
+}
