@@ -1,0 +1,116 @@
+---
+import "../styles/Welcome.css";
+import { ArrowDownRight, Download, Linkedin, Mail, MapPin, Phone } from "lucide-astro";
+
+const focusAreas = [
+	"Angular and TypeScript architectures",
+	"Spring Boot microservices and APIs",
+	"Production troubleshooting and log analysis",
+	"Large dataset handling, mapping, and validation",
+];
+
+const quickStats = [
+	{ value: "9+", label: "Years building production software" },
+	{ value: "4", label: "Core domains across banking, airline, reporting, and finance" },
+	{ value: "E2E", label: "Delivery style across UI, APIs, debugging, and rollout support" },
+];
+---
+
+<section class="welcome" id="top">
+	<header class="welcome__nav">
+		<div class="welcome__signature">Sam Antony Joseph</div>
+		<nav class="welcome__nav-links" aria-label="Social links">
+			<a href="mailto:samantony.dev@gmail.com" class="welcome__icon" aria-label="Email Sam">
+				<Mail />
+			</a>
+
+			<a href="tel:+917395962447" class="welcome__icon" aria-label="Call Sam">
+				<Phone />
+			</a>
+
+			<a
+				href="https://linkedin.com/in/sam-antony"
+				class="welcome__icon"
+				aria-label="View LinkedIn profile"
+				target="_blank"
+				rel="noreferrer"
+			>
+				<Linkedin />
+			</a>
+		</nav>
+	</header>
+
+	<div class="welcome__hero">
+		<div class="welcome__copy">
+			<p class="welcome__eyebrow">Senior Software Engineer / Associate Technical Architect</p>
+			<h1 class="welcome__title">
+				Designing reliable software for high-volume systems that cannot afford to fail quietly.
+			</h1>
+			<p class="welcome__lede">
+				I am a Chennai-based full stack engineer with around nine years of experience building
+				and supporting business-critical products across banking, airline, and reporting domains.
+				My work sits at the intersection of Angular frontends, Spring Boot services, data-heavy
+				flows, and production reliability.
+			</p>
+
+			<div class="welcome__meta">
+				<p class="welcome__meta-item">
+					<MapPin />
+					Chennai, Tamil Nadu
+				</p>
+				<a href="mailto:samantony.dev@gmail.com" class="welcome__meta-item">
+					<Mail />
+					samantony.dev@gmail.com
+				</a>
+				<a href="tel:+917395962447" class="welcome__meta-item">
+					<Phone />
+					+91 73959 62447
+				</a>
+			</div>
+
+			<div class="welcome__actions">
+				<a href="#featured-projects" class="welcome__button welcome__button--primary">
+					View core strengths
+					<ArrowDownRight />
+				</a>
+				<a
+					href="https://linkedin.com/in/sam-antony"
+					class="welcome__button welcome__button--secondary"
+					target="_blank"
+					rel="noreferrer"
+				>
+					LinkedIn profile
+				</a>
+				<a
+					href="/resume/Sam_Antony_Joseph_Resume.pdf"
+					class="welcome__button welcome__button--secondary"
+					target="_blank"
+					rel="noreferrer"
+				>
+					Resume
+					<Download />
+				</a>
+			</div>
+		</div>
+
+		<div class="welcome__panel">
+			<p class="welcome__panel-label">What I’m known for</p>
+			<div class="welcome__panel-grid">
+				{
+					quickStats.map((stat) => (
+						<article class="welcome__stat">
+							<h2>{stat.value}</h2>
+							<p>{stat.label}</p>
+						</article>
+					))
+				}
+			</div>
+			<div class="welcome__focus">
+				<p class="welcome__panel-label">Current focus</p>
+				<ul class="welcome__focus-list">
+					{focusAreas.map((area) => <li>{area}</li>)}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

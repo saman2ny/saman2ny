@@ -1,0 +1,159 @@
+---
+import "../styles/Blog.css";
+
+const featuredProjects = [
+	{
+		title: "Performance tuning for data-heavy Angular screens",
+		tag: "Frontend Reliability",
+		description:
+			"Improved responsiveness in listing and filtering flows by introducing pagination, tighter filtering, and better rendering discipline when datasets grew.",
+	},
+	{
+		title: "API and data-flow alignment across distributed services",
+		tag: "Backend + Integration",
+		description:
+			"Worked through log traces, API responses, and mapping logic to resolve mismatches between services so data stayed consistent from backend to UI.",
+	},
+	{
+		title: "Production issue resolution without repeat incidents",
+		tag: "Operational Ownership",
+		description:
+			"Handled live issues by isolating root causes, adjusting code or response contracts safely, and strengthening validation to keep the same failure from returning.",
+	},
+];
+
+const journalEntries = [
+	{
+		title: "Virtusa / Fiserv",
+		meta: "Associate Technical Architect / Oct 2025 - Current",
+	},
+	{
+		title: "Temenos",
+		meta: "Associate Engineer / Jul 2021 - Oct 2025",
+	},
+	{
+		title: "Ducont India Systems Pvt Limited",
+		meta: "Java Developer / Jun 2019 - Jul 2021",
+	},
+	{
+		title: "Novelsoft",
+		meta: "Full Stack Web Developer / Jun 2016 - Jun 2019",
+	},
+];
+
+const capabilityGroups = [
+	{
+		title: "Frontend delivery",
+		items: ["Angular", "TypeScript", "JavaScript", "HTML", "CSS"],
+	},
+	{
+		title: "Backend and data",
+		items: ["Java", "Spring Boot", "REST APIs", "MySQL", "PostgreSQL"],
+	},
+	{
+		title: "Platforms and operations",
+		items: ["Jenkins", "Docker", "Kubernetes", "AWS", "Azure", "Kafka", "Airflow"],
+	},
+];
+---
+
+<section class="blog">
+	<div class="blog__shell">
+		<div class="blog__hero">
+			<p class="blog__eyebrow">Meaningful Work</p>
+			<h1 class="blog__title">Full stack engineering with equal attention to delivery, scale, and stability.</h1>
+			<p class="blog__lede">
+				My projects usually involve business-critical flows where frontend clarity, backend
+				correctness, and production behavior all matter at once. I work across the full stack,
+				but the consistent thread is reliability under load and simplicity in implementation.
+			</p>
+		</div>
+
+		<div class="blog__grid">
+			<section class="blog__panel blog__panel--feature" aria-labelledby="featured-projects">
+				<div class="blog__section-head">
+					<p class="blog__section-label">Core strengths</p>
+					<h2 id="featured-projects">What I tend to improve inside complex systems.</h2>
+				</div>
+
+				<div class="blog__cards">
+					{
+						featuredProjects.map((project) => (
+							<article class="blog__card">
+								<p class="blog__card-tag">{project.tag}</p>
+								<h3>{project.title}</h3>
+								<p>{project.description}</p>
+							</article>
+						))
+					}
+				</div>
+			</section>
+
+			<aside class="blog__panel blog__panel--journal" aria-labelledby="journal-list">
+				<div class="blog__section-head">
+					<p class="blog__section-label">Career path</p>
+					<h2 id="journal-list">Experience across domains where data and uptime both matter.</h2>
+				</div>
+
+				<div class="blog__journal-list">
+					{
+						journalEntries.map((entry) => (
+							<article class="blog__entry">
+								<p class="blog__entry-meta">{entry.meta}</p>
+								<h3>{entry.title}</h3>
+							</article>
+						))
+					}
+				</div>
+			</aside>
+		</div>
+
+		<section class="blog__capabilities" aria-labelledby="capabilities">
+			<div class="blog__section-head">
+				<p class="blog__section-label">Capabilities</p>
+				<h2 id="capabilities">Tools and platforms I use to ship end-to-end work.</h2>
+			</div>
+
+			<div class="blog__capability-grid">
+				{
+					capabilityGroups.map((group) => (
+						<article class="blog__capability">
+							<h3>{group.title}</h3>
+							<div class="blog__chips">
+								{group.items.map((item) => <span class="blog__chip">{item}</span>)}
+							</div>
+						</article>
+					))
+				}
+			</div>
+		</section>
+
+		<footer class="blog__footer" aria-labelledby="footer-title">
+			<div class="blog__footer-intro">
+				<p class="blog__section-label">Open to meaningful work</p>
+				<h2 id="footer-title">If the system is critical, complex, or overdue for clarity, I can help.</h2>
+				<p class="blog__footer-copy">
+					I work best on products where engineering quality, production behavior, and readable
+					execution all matter together.
+				</p>
+			</div>
+
+			<div class="blog__footer-actions">
+				<a href="mailto:samantony.dev@gmail.com" class="blog__footer-link">
+					samantony.dev@gmail.com
+				</a>
+				<a href="https://linkedin.com/in/sam-antony" class="blog__footer-link" target="_blank" rel="noreferrer">
+					LinkedIn
+				</a>
+				<a href="/resume/Sam_Antony_Joseph_Resume.pdf" class="blog__footer-link" target="_blank" rel="noreferrer">
+					Resume
+				</a>
+			</div>
+
+			<div class="blog__footer-bar">
+				<p>Based in Chennai, building dependable full stack systems.</p>
+				<a href="#top" class="blog__footer-top">Back to top</a>
+			</div>
+		</footer>
+	</div>
+</section>

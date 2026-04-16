@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/Welcome.css";
+import "../styles/404.css";
+import { ArrowLeft, Compass, Home, Sparkles } from "lucide-astro";
+---
+
+<Layout title="404 / Sam An2ny">
+	<section class="welcome">
+		<header class="welcome__nav">
+			<a href="/" class="not-found__brand">Sam An2ny</a>
+			<nav class="welcome__nav-links" aria-label="Recovery links">
+				<a href="/" class="welcome__icon" aria-label="Go to homepage">
+					<Home />
+				</a>
+				<a href="/#featured-projects" class="welcome__icon" aria-label="Jump to featured work">
+					<Compass />
+				</a>
+			</nav>
+		</header>
+	</section>
+
+	<main class="not-found">
+		<div class="not-found__shell">
+			<div class="not-found__signal">
+				<Sparkles />
+				<span>Lost page signal</span>
+			</div>
+
+			<p class="not-found__code">404</p>
+			<h1 class="not-found__title">This route slipped outside the map.</h1>
+			<p class="not-found__copy">
+				The page you requested does not exist, may have moved, or was never published. The rest
+				of the site is still here and easy to get back to.
+			</p>
+
+			<div class="not-found__actions">
+				<a href="/" class="not-found__button not-found__button--primary">
+					<Home />
+					Return home
+				</a>
+				<a href="/#featured-projects" class="not-found__button not-found__button--secondary">
+					<Compass />
+					View featured work
+				</a>
+			</div>
+
+			<div class="not-found__panel">
+				<div class="not-found__panel-copy">
+					<p class="not-found__eyebrow">Quick Recovery</p>
+					<h2>Use the main route and continue from there.</h2>
+					<p>
+						The homepage holds the portfolio overview, project highlights, and recent writing,
+						so it is the best place to re-enter the site.
+					</p>
+				</div>
+				<a href="/" class="not-found__text-link">
+					<ArrowLeft />
+					Back to the front page
+				</a>
+			</div>
+		</div>
+	</main>
+</Layout>

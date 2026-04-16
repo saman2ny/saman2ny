@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;700;800&display=swap");
+
+.not-found {
+	padding: 1rem 1.25rem 4rem;
+}
+
+.not-found__shell {
+	position: relative;
+	overflow: hidden;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: clamp(2rem, 5vw, 4rem);
+	border-radius: 2rem;
+	border: 1px solid rgba(17, 17, 17, 0.08);
+	background:
+		radial-gradient(circle at top left, rgba(147, 175, 165, 0.42), transparent 24%),
+		radial-gradient(circle at bottom right, rgba(219, 171, 116, 0.3), transparent 25%),
+		linear-gradient(180deg, rgba(255, 252, 247, 0.92), rgba(252, 245, 235, 0.88));
+	box-shadow:
+		0 28px 90px rgba(68, 53, 38, 0.1),
+		inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.not-found__shell::before,
+.not-found__shell::after {
+	content: "";
+	position: absolute;
+	border-radius: 999px;
+	pointer-events: none;
+	filter: blur(6px);
+}
+
+.not-found__shell::before {
+	top: -3rem;
+	right: 8%;
+	width: 10rem;
+	height: 10rem;
+	background: rgba(126, 159, 148, 0.14);
+}
+
+.not-found__shell::after {
+	bottom: -4rem;
+	left: -1rem;
+	width: 14rem;
+	height: 14rem;
+	background: rgba(221, 168, 111, 0.12);
+}
+
+.not-found__brand {
+	font-family: "Poppins", cursive;
+	font-size: clamp(2rem, 4vw, 3rem);
+	letter-spacing: 0.08em;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.not-found__signal,
+.not-found__eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	font-family: "Manrope", sans-serif;
+	font-size: 0.76rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: #7f5c37;
+}
+
+.not-found__signal {
+	margin-bottom: 1.5rem;
+	padding: 0.7rem 0.9rem;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.58);
+	border: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+.not-found__signal :global(svg),
+.not-found__button :global(svg),
+.not-found__text-link :global(svg) {
+	width: 1rem;
+	height: 1rem;
+	flex: 0 0 auto;
+}
+
+.not-found__code {
+	font-family: "Manrope", sans-serif;
+	font-size: 0.95rem;
+	font-weight: 800;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	color: #8f6a43;
+	margin-bottom: 1rem;
+}
+
+.not-found__title,
+.not-found__panel h2 {
+	font-family: "Cormorant Garamond", serif;
+	color: #1d140d;
+	line-height: 0.94;
+}
+
+.not-found__title {
+	max-width: 10ch;
+	font-size: clamp(3.8rem, 10vw, 7rem);
+	letter-spacing: -0.04em;
+	margin-bottom: 1rem;
+}
+
+.not-found__copy,
+.not-found__panel p {
+	max-width: 42rem;
+	font-family: "Manrope", sans-serif;
+	font-size: 1.05rem;
+	line-height: 1.8;
+	color: #5e5144;
+}
+
+.not-found__copy {
+	margin-bottom: 2rem;
+}
+
+.not-found__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.9rem;
+	margin-bottom: 2rem;
+}
+
+.not-found__button,
+.not-found__text-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.65rem;
+	text-decoration: none;
+	font-family: "Manrope", sans-serif;
+	font-weight: 700;
+	transition:
+		transform 0.2s ease,
+		border-color 0.2s ease,
+		background-color 0.2s ease,
+		color 0.2s ease;
+}
+
+.not-found__button {
+	padding: 0.95rem 1.2rem;
+	border-radius: 999px;
+	border: 1px solid transparent;
+}
+
+.not-found__button:hover,
+.not-found__text-link:hover {
+	transform: translateY(-2px);
+}
+
+.not-found__button--primary {
+	background: #1d140d;
+	color: #fff8f0;
+	box-shadow: 0 16px 36px rgba(29, 20, 13, 0.18);
+}
+
+.not-found__button--primary:hover {
+	background: #342319;
+}
+
+.not-found__button--secondary {
+	color: #2d241d;
+	background: rgba(255, 255, 255, 0.6);
+	border-color: rgba(17, 17, 17, 0.08);
+}
+
+.not-found__button--secondary:hover {
+	border-color: rgba(127, 92, 55, 0.3);
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.not-found__panel {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	gap: 1.5rem;
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+	border: 1px solid rgba(17, 17, 17, 0.08);
+	background: rgba(255, 255, 255, 0.54);
+}
+
+.not-found__panel-copy {
+	max-width: 36rem;
+}
+
+.not-found__eyebrow {
+	margin-bottom: 0.9rem;
+}
+
+.not-found__panel h2 {
+	font-size: clamp(2rem, 4vw, 3rem);
+	margin-bottom: 0.75rem;
+}
+
+.not-found__text-link {
+	color: #1d140d;
+	white-space: nowrap;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 0.2rem;
+}
+
+.not-found__text-link:hover {
+	color: #7f5c37;
+}
+
+@media (max-width: 860px) {
+	.not-found__panel {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 640px) {
+	.not-found {
+		padding-inline: 1rem;
+		padding-bottom: 3rem;
+	}
+
+	.not-found__actions {
+		flex-direction: column;
+	}
+
+	.not-found__button {
+		justify-content: center;
+		width: 100%;
+	}
+}
