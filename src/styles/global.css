@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 :root {
 	--page-ink: #17110d;
 	--page-muted: #5f5348;
@@ -12,6 +13,8 @@
 	--page-line: rgba(77, 58, 39, 0.08);
 }
 
+=======
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 * {
 	margin: 0;
 	padding: 0;
@@ -28,6 +31,7 @@ body {
 body {
 	font-family: "Manrope", sans-serif;
 	background:
+<<<<<<< HEAD
 		repeating-linear-gradient(
 			90deg,
 			rgba(92, 70, 45, 0.035) 0,
@@ -41,11 +45,18 @@ body {
 	min-height: 100vh;
 	position: relative;
 	overflow-x: hidden;
+=======
+		radial-gradient(circle at top, rgba(237, 224, 206, 0.82), transparent 28%),
+		linear-gradient(180deg, #f8f2e8 0%, #f4efe7 52%, #efe6da 100%);
+	color: #111;
+	min-height: 100vh;
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 }
 
 a {
 	color: inherit;
 }
+<<<<<<< HEAD
 
 .site-doodles {
 	position: fixed;
@@ -392,3 +403,5 @@ body > *:not(.site-doodles) {
 		display: none;
 	}
 }
+=======
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647

@@ -1,16 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Cormorant+Garamond:wght@600;700&display=swap");
 
 .blog {
+<<<<<<< HEAD
 	padding: 1.6rem 1.25rem 4rem;
+=======
+	padding: 2rem 1.25rem 4rem;
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 }
 
 .blog__shell {
 	position: relative;
 	max-width: 1100px;
 	margin: 0 auto;
+<<<<<<< HEAD
 	padding: 2.4rem 2rem 2rem;
 	border: 1px solid rgba(17, 17, 17, 0.07);
 	border-radius: 2.4rem;
+=======
+	padding: 2rem;
+	border: 1px solid rgba(17, 17, 17, 0.08);
+	border-radius: 2rem;
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 	background:
 		radial-gradient(circle at top right, rgba(186, 209, 197, 0.45), transparent 30%),
 		radial-gradient(circle at left center, rgba(244, 214, 182, 0.4), transparent 28%),
@@ -21,6 +31,7 @@
 	backdrop-filter: blur(12px);
 }
 
+<<<<<<< HEAD
 .blog__shell::before {
 	content: "";
 	position: absolute;
@@ -34,6 +45,11 @@
 .blog__hero {
 	max-width: 760px;
 	margin-bottom: 3rem;
+=======
+.blog__hero {
+	max-width: 760px;
+	margin-bottom: 2.5rem;
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 }
 
 .blog__eyebrow,
@@ -60,11 +76,18 @@
 }
 
 .blog__title {
+<<<<<<< HEAD
 	font-size: clamp(3rem, 6.2vw, 5.1rem);
 	line-height: 0.92;
 	letter-spacing: -0.03em;
 	margin-bottom: 1rem;
 	text-wrap: balance;
+=======
+	font-size: clamp(2.8rem, 6vw, 4.9rem);
+	line-height: 0.95;
+	letter-spacing: -0.03em;
+	margin-bottom: 1rem;
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 }
 
 .blog__lede,
@@ -78,7 +101,11 @@
 
 .blog__grid {
 	display: grid;
+<<<<<<< HEAD
 	grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.88fr);
+=======
+	grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.95fr);
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 	gap: 1.5rem;
 	align-items: start;
 }
@@ -87,7 +114,11 @@
 	padding: 1.5rem;
 	border-radius: 1.5rem;
 	border: 1px solid rgba(17, 17, 17, 0.08);
+<<<<<<< HEAD
 	background: rgba(255, 255, 255, 0.52);
+=======
+	background: rgba(255, 255, 255, 0.58);
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 }
 
 .blog__section-head {
@@ -105,11 +136,14 @@
 	gap: 1rem;
 }
 
+<<<<<<< HEAD
 .blog__cards {
 	grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
 	align-items: stretch;
 }
 
+=======
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 .blog__card,
 .blog__entry {
 	padding: 1.25rem;
@@ -129,6 +163,7 @@
 	box-shadow: 0 14px 32px rgba(63, 48, 33, 0.08);
 }
 
+<<<<<<< HEAD
 .blog__card:first-child {
 	grid-column: 1 / -1;
 	padding: 1.6rem;
@@ -141,6 +176,8 @@
 	background: rgba(251, 245, 235, 0.92);
 }
 
+=======
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 .blog__card-tag,
 .blog__entry-meta {
 	color: #8c6a45;
@@ -162,6 +199,7 @@
 	margin: 0;
 }
 
+<<<<<<< HEAD
 .blog__journal-list {
 	position: relative;
 	padding-left: 1rem;
@@ -202,11 +240,23 @@
 	background:
 		radial-gradient(circle at bottom left, rgba(244, 214, 182, 0.28), transparent 28%),
 		rgba(255, 255, 255, 0.46);
+=======
+.blog__capabilities {
+	margin-top: 1.5rem;
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+	border: 1px solid rgba(17, 17, 17, 0.08);
+	background: rgba(255, 255, 255, 0.52);
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 }
 
 .blog__capability-grid {
 	display: grid;
+<<<<<<< HEAD
 	grid-template-columns: 1.15fr 0.85fr 0.85fr;
+=======
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 	gap: 1rem;
 }
 
@@ -217,10 +267,13 @@
 	border: 1px solid rgba(17, 17, 17, 0.08);
 }
 
+<<<<<<< HEAD
 .blog__capability:first-child {
 	min-height: 100%;
 }
 
+=======
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 .blog__capability h3 {
 	font-size: 1.6rem;
 	margin-bottom: 1rem;
@@ -243,6 +296,7 @@
 	color: #4c4034;
 }
 
+<<<<<<< HEAD
 .blog__footer {
 	margin-top: 2rem;
 	padding: 2rem;
@@ -338,16 +392,24 @@
 	}
 }
 
+=======
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 @media (max-width: 900px) {
 	.blog__grid {
 		grid-template-columns: 1fr;
 	}
 
+<<<<<<< HEAD
 	.blog__cards,
 	.blog__capability-grid {
 		grid-template-columns: 1fr;
 	}
 
+=======
+	.blog__capability-grid {
+		grid-template-columns: 1fr;
+	}
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 }
 
 @media (max-width: 640px) {
@@ -362,6 +424,7 @@
 	.blog__entry {
 		padding: 1.25rem;
 	}
+<<<<<<< HEAD
 
 	.blog__shell::before {
 		left: 1.25rem;
@@ -370,4 +433,6 @@
 	.blog__journal-list {
 		padding-left: 0.8rem;
 	}
+=======
+>>>>>>> 3a6893926242920343bcfa8e80091ca2d15cb647
 }
